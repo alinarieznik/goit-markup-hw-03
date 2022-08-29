@@ -156,11 +156,16 @@ margin-right: 50px;
     margin-right: 50px;
 }
 
+.header-list .list-item {
+    display: inline-block;
+}
+
 .header-list .list-link {
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-
+    
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -175,6 +180,9 @@ margin-right: 50px;
 .hero {
     background-color: var(--hero-footer-bg-color);
     text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -184,10 +192,11 @@ margin-right: 50px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    
     min-width: 696px;
-    padding-top: 200px;
-    padding-right: 252px;
-    padding-left: 252px;
+    /* are they right???? */
+    margin-right: 252px;
+    margin-left: 252px;
     margin-bottom: 30px;
 }
 
@@ -197,17 +206,15 @@ margin-right: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    /* display: flex;
-    align-items: center; */
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   
     padding: 10px 32px;
     min-width: 216px;
     border: 1px solid transparent;
-    margin-bottom: 200px;
 }
 
 .hero .btn:hover,
@@ -262,6 +269,10 @@ margin-right: 50px;
 }
 
 /* Activity and team */
+.section.activity {
+    padding-top: 0;
+}
+
 .activity-list {
     display: flex;
 }
@@ -326,6 +337,8 @@ margin-right: 50px;
 /* Footer */
 .footer {
     background-color: var(--hero-footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -336,17 +349,11 @@ margin-right: 50px;
     color: var(--primary-white-color);
 
     display: block;
-    padding-top: 60px;
     margin-bottom: 20px;
-}
-
-.footer-list {
-    padding-bottom: 60px;
 }
 
 .fotter-item:not(:last-child) {
     margin-bottom: 9px;
-    width: 231px;
 }
 
 .footer-list .list-link {
@@ -383,7 +390,6 @@ margin-right: 50px;
     letter-spacing: inherit;
     color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color) ;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     border-color: transparent;
     margin: 0;
@@ -394,6 +400,7 @@ margin-right: 50px;
 .projects-list .btn:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .projects-list .btn.current {
